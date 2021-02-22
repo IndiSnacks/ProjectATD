@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -11,7 +11,7 @@ public class Shooting : MonoBehaviour
     private float bulletForce = 200f;
     
 
-    private void shoot(InputAction.CallbackContext shootValue)
+    private void shootcheck(InputAction.CallbackContext shootValue)
     {
         shootbool = shootValue.ReadValueAsButton();
     }
@@ -26,7 +26,7 @@ public class Shooting : MonoBehaviour
 
     private void FixedUpdate() 
     {
-        if(shootbool == true)
+        if(shootbool === true)
         {
             shoot();
         }
