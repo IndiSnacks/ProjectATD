@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -20,13 +20,13 @@ public class Shooting : MonoBehaviour
     {
       GameObject Projectile = Instantiate(bulletPrefab, firepoint.position, firepoint.rotation);
       Rigidbody2D rbp = Projectile.GetComponent<Rigidbody2D>();
-      //rbp.AddForce(firepoint.right * bulletForce, ForceMode2D.Impulse);
-      //Debug.Log("Shoot");
+      rbp.AddForce(firepoint.right * bulletForce, ForceMode2D.Impulse);
+      Debug.Log("Shoot");
     }
 
     private void FixedUpdate() 
     {
-        if(shootbool === true)
+        if(shootcheck == true)
         {
             shoot();
         }
