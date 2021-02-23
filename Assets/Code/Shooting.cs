@@ -8,15 +8,15 @@ public class Shooting : MonoBehaviour
     private bool shootbool;
     public Transform firepoint;
     public GameObject bulletPrefab;
-    private float bulletForce = 200f;
+    public float bulletForce = 200f;
     
 
-    private void shootcheck(InputAction.CallbackContext shootValue)
+    private void shoot(InputAction.CallbackContext shootValue)
     {
         shootbool = shootValue.ReadValueAsButton();
     }
 
-    private void shoot()
+    private void shooted()
     {
       GameObject Projectile = Instantiate(bulletPrefab, firepoint.position, firepoint.rotation);
       Rigidbody2D rbp = Projectile.GetComponent<Rigidbody2D>();
@@ -26,9 +26,9 @@ public class Shooting : MonoBehaviour
 
     private void FixedUpdate() 
     {
-        if(shootcheck == true)
+        if(shootbool == true)
         {
-            shoot();
+            shooted();
         }
     }
 }
