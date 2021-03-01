@@ -319,12 +319,37 @@ PrefabInstance:
     - target: {fileID: 3121741395556082528, guid: f53940b3bfca38b49864486fb958d581,
         type: 3}
       propertyPath: bulletForce
-      value: 100
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 3121741395556082532, guid: f53940b3bfca38b49864486fb958d581,
         type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 3121741395556082533, guid: f53940b3bfca38b49864486fb958d581,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[2].m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3121741395556082533, guid: f53940b3bfca38b49864486fb958d581,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[2].m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3121741395556082533, guid: f53940b3bfca38b49864486fb958d581,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3121741395556082533, guid: f53940b3bfca38b49864486fb958d581,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[2].m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3121741395556082533, guid: f53940b3bfca38b49864486fb958d581,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[2].m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8002506957886653616, guid: f53940b3bfca38b49864486fb958d581,
         type: 3}
